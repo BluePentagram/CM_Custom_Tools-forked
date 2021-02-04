@@ -69,14 +69,14 @@ namespace CM_Custom_Tools.Comps
                 return;
             }
 
-            Hediff hediff = user.health.hediffSet.GetFirstHediffOfDef(Props.hediff);
+            Hediff hediff = user.health.hediffSet.GetFirstHediffOfDef(Props.hediffDef);
 
             if (hediff == null)
             {
-                if (Props.hediff != null)
+                if (Props.hediffDef != null)
                 {
                     //Log.Message("Adding hediff: " + Props.hediff + " with severity: " + hediffSeverityChange);
-                    hediff = user.health.AddHediff(Props.hediff);
+                    hediff = user.health.AddHediff(Props.hediffDef);
                     hediff.Severity = hediffSeverityChange;
                 }
                 else

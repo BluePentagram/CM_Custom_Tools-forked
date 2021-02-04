@@ -8,7 +8,7 @@ namespace CM_Custom_Tools.Comps
 {
     public class CompProperties_IncreaseUserHediffSeverityWhenHurt : CompProperties
     {
-        public HediffDef hediff;
+        public HediffDef hediffDef;
 
         public float severityToHealthFactor;
 

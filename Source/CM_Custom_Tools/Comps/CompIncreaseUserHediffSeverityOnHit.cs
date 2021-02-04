@@ -12,10 +12,10 @@ namespace CM_Custom_Tools.Comps
 
         public override void Notify_UsedWeapon(Pawn pawn)
         {
-            Hediff hediff = pawn.health.hediffSet.GetFirstHediffOfDef(Props.hediff);
+            Hediff hediff = pawn.health.hediffSet.GetFirstHediffOfDef(Props.hediffDef);
 
             if (hediff == null)
-                hediff = pawn.health.AddHediff(Props.hediff);
+                hediff = pawn.health.AddHediff(Props.hediffDef);
 
             hediff.Severity = hediff.Severity + Props.severityPerHit;
         }
