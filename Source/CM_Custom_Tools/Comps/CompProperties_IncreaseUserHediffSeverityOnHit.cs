@@ -4,7 +4,7 @@ using RimWorld;
 using Verse;
 using Verse.AI;
 
-namespace CM_Custom_Addons.Comps
+namespace CM_Custom_Tools.Comps
 {
     public class CompProperties_IncreaseUserHediffSeverityOnHit : CompProperties
     {

@@ -7,9 +7,9 @@ using RimWorld;
 using Verse;
 using Verse.AI;
 
-using CM_Custom_Addons.Comps;
+using CM_Custom_Tools.Comps;
 
-namespace CM_Custom_Addons.Patches
+namespace CM_Custom_Tools.Patches
 {
     [StaticConstructorOnStartup]
     public static class Pawn_Patches

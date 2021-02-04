@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using RimWorld;
 using Verse;
 
-namespace CM_Custom_Addons.Comps
+namespace CM_Custom_Tools.Comps
 {
     [StaticConstructorOnStartup]
     public class CompIncreaseUserHediffSeverityWhenHurt : ThingComp

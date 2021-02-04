@@ -7,8 +7,8 @@
     <ProjectGuid>{111B183C-8B83-4DA2-98AB-769935642F1C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CM_Custom_Addons</RootNamespace>
-    <AssemblyName>CM_Custom_Addons</AssemblyName>
+    <RootNamespace>CM_Custom_Tools</RootNamespace>
+    <AssemblyName>CM_Custom_Tools</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -57,7 +57,7 @@
     <Compile Include="Comps\CompIncreaseUserHediffSeverityOnHit.cs" />
     <Compile Include="Comps\CompProperties_IncreaseUserHediffSeverityWhenHurt.cs" />
     <Compile Include="Comps\CompProperties_IncreaseUserHediffSeverityOnHit.cs" />
-    <Compile Include="CustomAddonsMod.cs" />
+    <Compile Include="CustomToolsMod.cs" />
     <Compile Include="Patches\Pawn_Patches.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

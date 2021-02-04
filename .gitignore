@@ -9,8 +9,8 @@ ExportedObj/
 *.pidb
 *.booproj
 *.svd
-Source/CM_Custom_Addons/.idea/
-Source/CM_Custom_Addons/.vs/
-Source/CM_Custom_Addons/bin/
-Source/CM_Custom_Addons/obj/
-Source/CM_Custom_Addons/packages/
+Source/CM_Custom_Tools/.idea/
+Source/CM_Custom_Tools/.vs/
+Source/CM_Custom_Tools/bin/
+Source/CM_Custom_Tools/obj/
+Source/CM_Custom_Tools/packages/
