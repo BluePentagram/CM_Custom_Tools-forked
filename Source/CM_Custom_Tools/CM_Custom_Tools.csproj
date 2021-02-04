@@ -58,6 +58,7 @@
     <Compile Include="Comps\CompProperties_IncreaseUserHediffSeverityWhenHurt.cs" />
     <Compile Include="Comps\CompProperties_IncreaseUserHediffSeverityOnHit.cs" />
     <Compile Include="CustomToolsMod.cs" />
+    <Compile Include="IngestionOutcomeDoers\IngestionOutcomeDoer_ChangeHediffSeverity.cs" />
     <Compile Include="Patches\Pawn_Patches.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
