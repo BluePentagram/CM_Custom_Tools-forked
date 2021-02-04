@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Muscles' Custom Tools</name>
+	<author>Captain Muscles (Nathan Harbour)</author>
+	<packageId>CaptainMuscles.CustomTools</packageId>
+	<url>https://github.com/CaptainMuscles/CM_Custom_Tools</url>
+	<supportedVersions>
+		<li>1.2</li>
+	</supportedVersions>
+	<description>This mod is a growing library of small additions I've put together for other modders to use to create content. It will do nothing on its own.</description>
+	<modDependencies>
+		<li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+		</li>
+	</modDependencies>
+
+	<loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>brrainz.harmony</li>
+	</loadAfter>
+</ModMetaData>
