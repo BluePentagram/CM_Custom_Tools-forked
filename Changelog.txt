@@ -1,0 +1,13 @@
+## [1.0.1] - 2021-02-07
+
+### Added
+- IncidentDefExpanded
+- IncidentWorker_Expanded_ManhunterPack
+- IncidentWorker_Expanded_ManhunterPackWithBoss
+
+
+## [1.0.0] - 2021-02-04
+
+### Added
+- CompIncreaseUserHediffSeverityWhenHurt
+- IngestionOutcomeDoer_ChangeHediffSeverity
