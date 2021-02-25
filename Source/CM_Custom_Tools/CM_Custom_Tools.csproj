@@ -57,6 +57,8 @@
     <Compile Include="Comps\CompIncreaseUserHediffSeverityOnHit.cs" />
     <Compile Include="Comps\CompProperties_IncreaseUserHediffSeverityWhenHurt.cs" />
     <Compile Include="Comps\CompProperties_IncreaseUserHediffSeverityOnHit.cs" />
+    <Compile Include="Comps\CompProperties_ProximityFuseByThingRequestGroup.cs" />
+    <Compile Include="Comps\CompProximityFuseByThingRequestGroup.cs" />
     <Compile Include="CustomToolsMod.cs" />
     <Compile Include="IncidentDefExpanded.cs" />
     <Compile Include="IncidentWorkers\IncidentWorker_Expanded_ManhunterPackWithBoss.cs" />
