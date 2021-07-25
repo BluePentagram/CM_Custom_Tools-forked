@@ -61,8 +61,8 @@ namespace CM_Custom_Tools.IncidentWorkers
                 return false;
             }
 
-            List<Pawn> list = ManhunterPackIncidentUtility.GenerateAnimals_NewTmp(bossKind, map.Tile, bossKind.combatPower, 1);
-            list.AddRange(ManhunterPackIncidentUtility.GenerateAnimals_NewTmp(animalKind, map.Tile, (parms.points * PointsFactor) - bossKind.combatPower, parms.pawnCount));
+            List<Pawn> list = ManhunterPackIncidentUtility.GenerateAnimals(bossKind, map.Tile, bossKind.combatPower, 1);
+            list.AddRange(ManhunterPackIncidentUtility.GenerateAnimals(animalKind, map.Tile, (parms.points * PointsFactor) - bossKind.combatPower, parms.pawnCount));
             Rot4 rot = Rot4.FromAngleFlat((map.Center - result).AngleFlat);
             for (int i = 0; i < list.Count; i++)
             {

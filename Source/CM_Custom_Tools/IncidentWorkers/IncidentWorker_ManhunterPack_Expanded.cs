@@ -59,7 +59,7 @@ namespace CM_Custom_Tools.IncidentWorkers
             {
                 return false;
             }
-            List<Pawn> list = ManhunterPackIncidentUtility.GenerateAnimals_NewTmp(animalKind, map.Tile, parms.points * PointsFactor, parms.pawnCount);
+            List<Pawn> list = ManhunterPackIncidentUtility.GenerateAnimals(animalKind, map.Tile, parms.points * PointsFactor, parms.pawnCount);
             Rot4 rot = Rot4.FromAngleFlat((map.Center - result).AngleFlat);
             for (int i = 0; i < list.Count; i++)
             {
