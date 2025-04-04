@@ -14,3 +14,7 @@ Source/CM_Custom_Tools/.vs/
 Source/CM_Custom_Tools/bin/
 Source/CM_Custom_Tools/obj/
 Source/CM_Custom_Tools/packages/
+# Blue_Pentagram Ignore's
+/.vscode/obj
+/*.sln 
+/*.cs
