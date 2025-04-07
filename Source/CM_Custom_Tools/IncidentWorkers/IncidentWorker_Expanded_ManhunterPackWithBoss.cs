@@ -28,7 +28,7 @@ namespace CM_Custom_Tools.IncidentWorkers
 
             if (result == null)
             {
-                ManhunterPackIncidentUtility.TryFindManhunterAnimalKind(points, tile, out result);
+                AggressiveAnimalIncidentUtility.TryFindAggressiveAnimalKind(points, tile, out result);
             }
 
             return result;
@@ -51,7 +51,7 @@ namespace CM_Custom_Tools.IncidentWorkers
             PawnKindDef bossKind = def.pawnKind;
             PawnKindDef animalKind = GetAnimalKind(parms.points, map.Tile);
 
-            if (bossKind == null || animalKind == null || ManhunterPackIncidentUtility.GetAnimalsCount(animalKind, (parms.points * PointsFactor) - bossKind.combatPower) <= 0)
+            if (bossKind == null || animalKind == null || AggressiveAnimalIncidentUtility.GetAnimalsCount(animalKind, (parms.points * PointsFactor) - bossKind.combatPower) <= 0)
             {
                 return false;
             }
@@ -61,8 +61,8 @@ namespace CM_Custom_Tools.IncidentWorkers
                 return false;
             }
 
-            List<Pawn> list = ManhunterPackIncidentUtility.GenerateAnimals(bossKind, map.Tile, bossKind.combatPower, 1);
-            list.AddRange(ManhunterPackIncidentUtility.GenerateAnimals(animalKind, map.Tile, (parms.points * PointsFactor) - bossKind.combatPower, parms.pawnCount));
+            List<Pawn> list = AggressiveAnimalIncidentUtility.GenerateAnimals(bossKind, map.Tile, bossKind.combatPower, 1);
+            list.AddRange(AggressiveAnimalIncidentUtility.GenerateAnimals(animalKind, map.Tile, (parms.points * PointsFactor) - bossKind.combatPower, parms.pawnCount));
             Rot4 rot = Rot4.FromAngleFlat((map.Center - result).AngleFlat);
             for (int i = 0; i < list.Count; i++)
             {

@@ -18,7 +18,9 @@ namespace CM_Custom_Tools.IngestionOutcomeDoers
 
         public bool divideByBodySize;
 
-        protected override void DoIngestionOutcomeSpecial(Pawn pawn, Thing ingested)
+        public bool applyGeneToleranceFactor;
+
+        protected override void DoIngestionOutcomeSpecial(Pawn pawn, Thing ingested, int ingestedCount)
         {
             List<Hediff> hediffs = pawn.health.hediffSet.hediffs.Where(hd => hd.def == hediffDef).ToList();
 
@@ -31,7 +33,7 @@ namespace CM_Custom_Tools.IngestionOutcomeDoers
                 if (divideByBodySize)
                     effect /= pawn.BodySize;
 
-                AddictionUtility.ModifyChemicalEffectForToleranceAndBodySize(pawn, toleranceChemical, ref effect);
+                AddictionUtility.ModifyChemicalEffectForToleranceAndBodySize_NewTemp(pawn, toleranceChemical, ref effect, applyGeneToleranceFactor);
 
                 if (isScalar)
                     newSeverity *= effect;

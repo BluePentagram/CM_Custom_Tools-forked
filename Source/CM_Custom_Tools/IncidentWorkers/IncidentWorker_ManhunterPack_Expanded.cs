@@ -28,7 +28,7 @@ namespace CM_Custom_Tools.IncidentWorkers
 
             if (result == null)
             {
-                ManhunterPackIncidentUtility.TryFindManhunterAnimalKind(points, tile, out result);
+                AggressiveAnimalIncidentUtility.TryFindAggressiveAnimalKind(points, tile, out result);
             }
 
             return result;
@@ -50,7 +50,7 @@ namespace CM_Custom_Tools.IncidentWorkers
             Map map = (Map)parms.target;
             PawnKindDef animalKind = GetAnimalKind(parms.points, map.Tile);
 
-            if (animalKind == null || ManhunterPackIncidentUtility.GetAnimalsCount(animalKind, parms.points) == 0)
+            if (animalKind == null || AggressiveAnimalIncidentUtility.GetAnimalsCount(animalKind, parms.points) == 0)
             {
                 return false;
             }
@@ -59,7 +59,7 @@ namespace CM_Custom_Tools.IncidentWorkers
             {
                 return false;
             }
-            List<Pawn> list = ManhunterPackIncidentUtility.GenerateAnimals(animalKind, map.Tile, parms.points * PointsFactor, parms.pawnCount);
+            List<Pawn> list = AggressiveAnimalIncidentUtility.GenerateAnimals(animalKind, map.Tile, parms.points * PointsFactor, parms.pawnCount);
             Rot4 rot = Rot4.FromAngleFlat((map.Center - result).AngleFlat);
             for (int i = 0; i < list.Count; i++)
             {
