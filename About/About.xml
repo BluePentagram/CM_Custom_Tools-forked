@@ -9,6 +9,7 @@
 		<li>1.3</li>
 		<li>1.4</li>
 		<li>1.5</li>
+		<li>1.6</li>
 	</supportedVersions>
 	<description>This mod is a growing library of small additions I've put together for other modders to use to create content. It will do nothing on its own.</description>
 	<modDependencies>

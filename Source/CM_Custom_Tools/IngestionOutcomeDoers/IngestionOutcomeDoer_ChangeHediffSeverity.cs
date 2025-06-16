@@ -33,7 +33,7 @@ namespace CM_Custom_Tools.IngestionOutcomeDoers
                 if (divideByBodySize)
                     effect /= pawn.BodySize;
 
-                AddictionUtility.ModifyChemicalEffectForToleranceAndBodySize_NewTemp(pawn, toleranceChemical, ref effect, applyGeneToleranceFactor);
+                AddictionUtility.ModifyChemicalEffectForToleranceAndBodySize(pawn, toleranceChemical, ref effect, applyGeneToleranceFactor);
 
                 if (isScalar)
                     newSeverity *= effect;
